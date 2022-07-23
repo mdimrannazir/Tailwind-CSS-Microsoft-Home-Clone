@@ -11,16 +11,19 @@
 
 <body>
     <div class="navbar flex justify-between items-center p-4">
-        <div class="flex items-center">
-            <div class="hamburger p-4 cursor-pointer md:hidden">
+        <div class="flex items-center md:order-2">
+            <div class="hamburger cursor-pointer md:hidden">
                 <div class="line w-6 h-0.5 bg-slate-700 m-1"></div>
                 <div class="line w-6 h-0.5 bg-slate-700 m-1"></div>
                 <div class="line w-6 h-0.5 bg-slate-700 m-1"></div>
             </div>
-            <div class="serach">SerachIcon</div>
+            <div class="serach md:hidden">SerachIcon</div>
         </div>
-        <div class="logo">Microsoft</div>
-        <div class="Account">Cart Account</div>
+        <div class="logo md:order-1">Microsoft</div>
+        <div class="Account md:order-3 flex">
+            <div class="serach hidden md:block">SerachIcon</div>
+            Cart Account
+        </div>
     </div>
 </body>
 
